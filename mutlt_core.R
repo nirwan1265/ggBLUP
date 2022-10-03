@@ -1,0 +1,8 @@
+library(snow)
+library(parallel)
+library(doSNOW)
+detectCores()
+cl <- makeCluster(4,type="SOCK")
+registerDoSNOW(cl)
+library(rrBLUP)
+library(dplyr)
