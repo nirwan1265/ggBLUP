@@ -19,9 +19,9 @@ set.seed(123)
 training_entries <- as.matrix(sample(1:93, 55))
 testing_entries <- setdiff(1:93, training_entries)
 
-Pheno_training_data <- as.matrix(Pheno_data[training_entries, ]) #%>% na.omit()
+Pheno_training_data <- as.matrix(Pheno[training_entries, ]) #%>% na.omit()
 SNP_training_data= as.matrix(SNP_markers[training_entries,], K = NULL) 
-Pheno_testing_data <- as.matrix(Pheno_data[testing_entries, ])# %>% na.omit
+Pheno_testing_data <- as.matrix(Pheno[testing_entries, ])# %>% na.omit
 SNP_testing_data= as.matrix(SNP_markers[testing_entries,], K = NULL)
 
 
