@@ -1,3 +1,4 @@
+library(rrBLUP)
 setwd("~/Library/Mobile Documents/com~apple~CloudDocs/Drosophila paper/Gemma.gwas/Data")
 system("ls")
 Pheno_data <- read.csv(paste0(getwd(),"/Phenotype/","dgrp.allpheno.csv"))
